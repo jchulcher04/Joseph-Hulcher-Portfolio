@@ -1,0 +1,64 @@
+    Overall Project:
+The intepreter is a single pass program, that reads, parses, and executes a lisp file of the proper syntax in one step and in a single file.
+The project is already compiled as "interpreter.exe" for windows, and can run files in the form: ./interpreter.exe file.lisp
+
+However, there is already done extensive unit testing, and a few more general programs in the tests folder.
+Additionally, there are other programs that work in this lisp (joeLisp), in the programs, those these are not unit tests, so their output is not standardized but expected output is listed at the end.
+
+
+
+
+    Notes about MY LISP:
+; denotes comments, for the rest of the line
+\* denotes the rest of the file is comments
+
+since all atoms are stored as strings, nil is stored as "", though nil is the keyword for the nil values
+
+S expressions are not divided into atoms and lists and names, all are the same type and interpreted at runtime
+    everything is a list of atoms, some atoms having links to more lists
+    the atom has the members data, nextAtom, and specialPointer
+        data: a string containing the data, which is why "" is nil
+        nextAtom, points to the next atom in the list. there is a nil atom added at the end of each list in parsing
+        specialPointer is only for lists, recognized in the interpreter by "(" in the data
+
+There is no memory managment. I don't really know how it would be implemented tho tbh.
+
+There are no floats, only ints.
+
+Since arguments are preevaluated before running the function in the function call, to send in a list, you must use the extra keyword "!" 
+    like this: function ! listargument 
+    instead of: function listargument
+        note: the cdr and cons functions, which return lists, override this and pass a list to the parameter
+On the note of local arguments, they can't have the same name as global variables made with set. in that case the behaviour is undefined, and generally leads to seg faults
+
+= evaluates the expressions and compares their results
+
+There is no way to compare the length of lists built in the language. However, I did write a function for that in test/listCompare.lisp
+
+There is a print statment of the the form print thingToPrint. It does not return to, which is useful for outputting data but finishing operations
+
+It is all in one file, and I did not know what I was doing at first, as reflected in the shotty design (that works) of atoms and lists. 
+
+
+    In my functions, there are some variation from the default detailed here:
+nil? evaluates expressions before returning.
+Quote returns either a string linking all the items of a list with spaces, or the item. If you want to quote a name add ! before
+
+
+
+
+
+    Problems I ran into:
+First, I had some difficulty with evaluating lists as they would 
+The second, far harder difficulty I came across was defining funcitons.
+    First I had difficulty with how they would work. I ended up storing them as links to the originial code of the funciton. So that when the name was arrived to, the program would return to the original definition and execute thats.
+    
+    Then arguments proved quite difficult. The system ended up using is when the function was called, local variables would be assigned for each argument in the original definition, then the function body would be ran.
+        I tried for a while to do lazy evaluation and store different layers of local variables, but that proved exeedingly difficult, so I gave up and choose to evaluate the arguments before hand.
+            This is why the ! argument was necessary.
+
+    
+
+ 
+
+

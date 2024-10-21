@@ -1,0 +1,29 @@
+    Reading the test results
+The unit tests tell what they are testing, and how many T's (for succesful test cases) should appear
+No bugs found currently remain, but problems with seting and such were found in unit testing
+At the end of every Test file there is /*  and then the expected output
+
+    Running the Tests
+The unit tests can be run with the following commands in windows:
+
+./interpreter.exe tests/booleanOperations.lisp
+    this tests if cond = < > and? or?
+
+./interpreter.exe tests/bowling.lisp
+    this shows user defined functions work, also the for that one lisp assignment
+
+./interpreter.exe tests/mathTests.lisp
+    Unit tests for +-/*
+
+./interpreter.exe tests/listManipulations.lisp
+    Unit tests for cond car, cdr, also has a user defined function
+
+./interpreter.exe tests/set.lisp
+    Unit tests for set. Just set. Was a bit tricky ig
+
+./interpreter.exe tests/typesTest.lisp
+    Unit tests for nil? number? list? symbol?
+
+./interpreter.exe tests/listCompare.lisp
+    Tests the listCompare function detailed earlier
+
