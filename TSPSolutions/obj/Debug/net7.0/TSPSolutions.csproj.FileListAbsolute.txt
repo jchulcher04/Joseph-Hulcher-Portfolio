@@ -1,0 +1,15 @@
+/home/joseph/General/Programming/CS470/TSP/TSPSolutions/bin/Debug/net7.0/TSPSolutions
+/home/joseph/General/Programming/CS470/TSP/TSPSolutions/bin/Debug/net7.0/TSPSolutions.deps.json
+/home/joseph/General/Programming/CS470/TSP/TSPSolutions/bin/Debug/net7.0/TSPSolutions.runtimeconfig.json
+/home/joseph/General/Programming/CS470/TSP/TSPSolutions/bin/Debug/net7.0/TSPSolutions.dll
+/home/joseph/General/Programming/CS470/TSP/TSPSolutions/bin/Debug/net7.0/TSPSolutions.pdb
+/home/joseph/General/Programming/CS470/TSP/TSPSolutions/obj/Debug/net7.0/TSPSolutions.csproj.AssemblyReference.cache
+/home/joseph/General/Programming/CS470/TSP/TSPSolutions/obj/Debug/net7.0/TSPSolutions.GeneratedMSBuildEditorConfig.editorconfig
+/home/joseph/General/Programming/CS470/TSP/TSPSolutions/obj/Debug/net7.0/TSPSolutions.AssemblyInfoInputs.cache
+/home/joseph/General/Programming/CS470/TSP/TSPSolutions/obj/Debug/net7.0/TSPSolutions.AssemblyInfo.cs
+/home/joseph/General/Programming/CS470/TSP/TSPSolutions/obj/Debug/net7.0/TSPSolutions.csproj.CoreCompileInputs.cache
+/home/joseph/General/Programming/CS470/TSP/TSPSolutions/obj/Debug/net7.0/TSPSolutions.dll
+/home/joseph/General/Programming/CS470/TSP/TSPSolutions/obj/Debug/net7.0/refint/TSPSolutions.dll
+/home/joseph/General/Programming/CS470/TSP/TSPSolutions/obj/Debug/net7.0/TSPSolutions.pdb
+/home/joseph/General/Programming/CS470/TSP/TSPSolutions/obj/Debug/net7.0/TSPSolutions.genruntimeconfig.cache
+/home/joseph/General/Programming/CS470/TSP/TSPSolutions/obj/Debug/net7.0/ref/TSPSolutions.dll
