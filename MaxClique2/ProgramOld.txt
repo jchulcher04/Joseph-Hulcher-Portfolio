@@ -1,0 +1,95 @@
+﻿﻿using System;
+
+using System.Collections.Generic;
+
+// See https://aka.ms/new-console-template for more information
+
+
+public class Program {
+    static void Main(string[] args) {
+        /*
+        int size = 30;
+        int percent = 75;
+        int[,] testGraph1 = GraphFunctions.GenerateRandomGraph(size, percent);
+        int [,] testGraph3 = GraphFunctions.GraphComplementer(testGraph1, size);
+        //GraphFunctions.PrintGraph(testGraph1, size);
+        // GraphFunctions.PrintGraph(testGraph3, size);
+
+        List<int> solution1 = MaxCliqueAlgorithms.BruteForce(testGraph1, size);
+
+        
+        
+        PrintSolution(testGraph1, solution1);
+        
+        int [,] testGraph2 = GraphFunctions.ReadAdjmatGraph("TestFiles/G/Q15V100.adjmat", 100);
+        List<int> solution2 = MaxCliqueAlgorithms.BruteForce(testGraph2, 100);
+        PrintSolution(testGraph2, solution2);
+        
+        int [,] testGraph4 = testGraph1; //Yessick's 2x alg
+        List<int> solution4 = MaxCliqueAlgorithms.Yessick2xAlg(testGraph4, 10);
+        PrintSolution(testGraph4, solution4);
+
+        int [,] testGraph5 = GraphFunctions.ReadAdjmatGraph("TestFiles/G/Q60V1000.adjmat", 1000);; //Yessick's 2x alg
+        List<int> solution5 = MaxCliqueAlgorithms.Yessick2xAlg(testGraph5, 1000);
+        PrintSolution(testGraph5, solution5);
+
+        int [,] testGraph6 = GraphFunctions.ReadAdjmatGraph("TestFiles/G/Q60V1000.adjmat", 1000);
+        List<int> solution6 = MaxCliqueAlgorithms.TimedOptimizedBruteForceEveryStart(testGraph6, 1000, 1000000);
+        PrintSolution(testGraph6, solution6);
+
+        int [,] testGraph7 = GraphFunctions.ReadAdjmatGraph("TestFiles/G/Q45V700.adjmat", 700);
+        List<int> solution7 = MaxCliqueAlgorithms.TimedOptimizedBruteForceEveryStart(testGraph7, 700, 10000000);
+        PrintSolution(testGraph7, solution7);
+        
+        int [,] testGraph8 = GraphFunctions.ReadAdjmatGraph("TestFiles/G/Q30V400.adjmat", 400);
+        List<int> solution8 = MaxCliqueAlgorithms.TimedOptimizedBruteForceEveryStart(testGraph8, 400, 10000000);
+        PrintSolution(testGraph8, solution8);
+        */
+        CompetitionRunner(args);
+        
+        
+
+        
+
+
+        //int [,] testGraph3 = GraphFunctions.ReadAdjmatGraph("TestFiles/G/Q30V400.adjmat", 400);
+        //List<int> solution3 = MaxCliqueAlgorithms.BruteForce(testGraph3, 400);
+        //PrintSolution(testGraph3, solution3);
+    }
+
+    public static void PrintSolution(int[,] graph, List<int> solution){ 
+        Console.Write("\nSolution Size: " + solution.Count);
+        Console.Write("\nSolution Status: ");
+        CheckSolution(graph, solution);
+        Console.Write("Solution: ");
+        for(int i = 0; i < solution.Count; i++){
+            Console.Write(solution[i] + " ");
+        }
+        Console.WriteLine();
+    }
+
+    public static void CheckSolution(int[,] graph, List<int> solution){
+        for(int i = 0; i < solution.Count; i++){
+            for(int j = i + 1; j < solution.Count; j++){
+                if(graph[solution[i],solution[j]] == 0) {
+                    Console.WriteLine("Bad Solution.");
+                    return;
+                }
+            }
+        }
+        Console.WriteLine("Good Solution");
+    }
+
+    public static void CompetitionRunner(string[] args){
+        int size = int.Parse(args[1]);
+        int [,] graph = GraphFunctions.ReadAdjmatGraph(args[0], size);
+        List<int> solution = new();
+        if(args[2] == "BF"){
+            solution = MaxCliqueAlgorithms.TimedOptimizedBruteForce(graph, size, long.Parse(args[3]));
+        } else if( args[2] == "BFT") {
+            solution = MaxCliqueAlgorithms.TimedOptimizedBruteForceEveryStart(graph, size, long.Parse(args[3]));
+        }
+        PrintSolution(graph, solution);
+    }
+
+}

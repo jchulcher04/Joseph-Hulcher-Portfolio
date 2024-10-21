@@ -1,0 +1,14 @@
+/home/joseph/General/Programming/CS470/MaxClique2/MaxClique2/bin/Debug/net8.0/MaxClique2
+/home/joseph/General/Programming/CS470/MaxClique2/MaxClique2/bin/Debug/net8.0/MaxClique2.deps.json
+/home/joseph/General/Programming/CS470/MaxClique2/MaxClique2/bin/Debug/net8.0/MaxClique2.runtimeconfig.json
+/home/joseph/General/Programming/CS470/MaxClique2/MaxClique2/bin/Debug/net8.0/MaxClique2.dll
+/home/joseph/General/Programming/CS470/MaxClique2/MaxClique2/bin/Debug/net8.0/MaxClique2.pdb
+/home/joseph/General/Programming/CS470/MaxClique2/MaxClique2/obj/Debug/net8.0/MaxClique2.GeneratedMSBuildEditorConfig.editorconfig
+/home/joseph/General/Programming/CS470/MaxClique2/MaxClique2/obj/Debug/net8.0/MaxClique2.AssemblyInfoInputs.cache
+/home/joseph/General/Programming/CS470/MaxClique2/MaxClique2/obj/Debug/net8.0/MaxClique2.AssemblyInfo.cs
+/home/joseph/General/Programming/CS470/MaxClique2/MaxClique2/obj/Debug/net8.0/MaxClique2.csproj.CoreCompileInputs.cache
+/home/joseph/General/Programming/CS470/MaxClique2/MaxClique2/obj/Debug/net8.0/MaxClique2.dll
+/home/joseph/General/Programming/CS470/MaxClique2/MaxClique2/obj/Debug/net8.0/refint/MaxClique2.dll
+/home/joseph/General/Programming/CS470/MaxClique2/MaxClique2/obj/Debug/net8.0/MaxClique2.pdb
+/home/joseph/General/Programming/CS470/MaxClique2/MaxClique2/obj/Debug/net8.0/MaxClique2.genruntimeconfig.cache
+/home/joseph/General/Programming/CS470/MaxClique2/MaxClique2/obj/Debug/net8.0/ref/MaxClique2.dll

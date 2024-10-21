@@ -1,0 +1,100 @@
+
+How to Read this file:
+    It is broke into sections of each test
+    For each algorithm, the command run is shown, followed by the result
+    
+
+    File Testfiles/G250:
+BF did not finish
+
+2xVertixCover Algorith  
+dotnet run R TestFiles/G250.adjmat 250 Yessick
+Solution Size: 0
+Solution Status: Good Solution
+Solution: 
+
+Brute Force optimized and Timed:
+dotnet run R TestFiles/G250.adjmat 250 BFT 10000000
+Solution Size: 14
+Solution Status: Good Solution
+Solution: 0 1 2 15 35 63 75 103 165 168 188 205 229 244 
+
+Brute Force optimized and Timed and starting at every node:
+dotnet run R TestFiles/G250.adjmat 250 BFTES 10000000
+Solution Size: 14
+Solution Status: Good Solution
+Solution: 5 6 10 18 21 39 52 79 116 121 178 188 194 234 
+
+
+
+    File Testfiles/G1000.adjmat:
+Brute Force would not finish.
+
+2xVertixCover Algorithm
+dotnet run R TestFiles/G1000.adjmat 1000 YESSICK:
+Solution Size: 0
+Solution Status: Good Solution
+Solution: 
+
+Brute Force optimized and Timed:
+dotnet run R TestFiles/G1000.adjmat 1000 BFT 1000000:
+Solution Size: 13
+Solution Status: Good Solution
+Solution: 0 1 2 4 28 122 158 214 265 442 477 572 752 
+
+Brute Force optimized and Timed and starting at every node:
+dotnet run R TestFiles/G1000.adjmat 1000 BFTES 1000000
+Solution Size: 13
+Solution Status: Good Solution
+Solution: 16 17 20 23 79 93 116 121 160 181 195 196 498 
+
+
+    File Testfiles/G/Q15V100.adjmat
+Brute Force:
+dotnet run R TestFiles/G/Q15V100.adjmat 100 BF
+Solution Size: 15
+Solution Status: Good Solution
+Solution: 9 11 13 26 28 30 43 45 60 62 77 79 92 94 96 
+
+
+    Generated graphs:
+Brute Force (100 node graph with 70% edges):
+dotnet run G 70 100 BF 
+Solution Size: 14
+Solution Status: Good Solution
+Solution: 0 13 27 33 35 43 50 53 55 58 74 85 92 93
+
+2xVertixCover Algorithm
+dotnet run G 90 10000 YESSIC
+Solution Size: 10
+Solution Status: Good Solution
+Solution: 9967 9974 9976 9977 9987 9990 9993 9996 9998 9999 
+
+Brute Force optimized and Timed:
+dotnet run G 50 10000 BFT 1000000
+Solution Size: 14
+Solution Status: Good Solution
+Solution: 0 4 6 10 15 28 35 228 920 3289 4956 4971 8925 9009
+
+Brute Force optimized and Timed and starting at every node:
+dotnet run G 50 10000 BFTES 100000000 
+Solution Size: 16
+Solution Status: Good Solution
+Solution: 408 410 412 419 449 555 731 742 837 1636 1985 2359 3754 4295 6056 8716 
+
+
+    Competition Resuts:
+I do not have those runs since I cannot see the submission on BlackBoard, Brute
+Brute Force optimized and Timed and starting at every node found 
+    G250: 15 node clique
+    G1000: 14 node clique
+    G3000: I don't remember.
+    G6000: 93 node clique
+    G16000: 189 node clique
+
+
+
+
+    
+
+
